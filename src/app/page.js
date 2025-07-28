@@ -1,10 +1,13 @@
 import Image from "next/image";
-
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import Items from "@/components/Items";
 export default function Home() {
   return (
    <div>
-      <h1 className="h1">add your only componnets in here s</h1>  
-  <h1>add your only componnets in here s</h1>  
+    <Navbar />
+    <Items />
+    <Footer />
    </div>
   );
 }

@@ -2,7 +2,7 @@ import axios from "axios";
 import { getToken } from "./token";
 
 const instance = axios.create({
-  baseURL: "",
+  baseURL: process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000",
 });
 
 instance.interceptors.request.use(
